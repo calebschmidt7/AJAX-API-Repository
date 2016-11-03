@@ -1,0 +1,78 @@
+html,
+body {
+	color: #666;
+	width: 100%
+	height: 100%;
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Coiny', arial; 
+}
+
+
+ul {
+	margin: auto;
+	text-align: center;
+}
+
+
+.albums {
+	list-style: none;
+	display: inline-block;
+	width: 30%;
+	margin-top: 5em;
+}
+
+img {
+	width: 250px;
+	height: 250px;
+	border: 1px solid #666;
+}
+
+
+
+/*****************************************************************
+  Lightbox
+*****************************************************************/  
+
+.lightbox {
+	background-color: rgba(0,0,0, 0.92);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.lightBoxImg {
+	height: 350px;
+	width: 350px;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	top: 15em;
+}
+
+.lightBoxText {
+	color: white;
+	font-size: 2em;
+	font-family: 'Coiny', arial;
+	position: absolute;
+	text-align: center;
+	left: 0;
+	right: 0;
+	top: 23em;
+}
+
+#close {
+	color: white;
+	font-size: 2em;
+	font-family:  arial;
+	position: absolute;
+	text-align: right;
+	right: 20em;
+	top: 7em;
+}
