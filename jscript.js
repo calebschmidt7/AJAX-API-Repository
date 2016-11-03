@@ -13,21 +13,21 @@ $(document).ready( function() {
 		
 		
 		$('img').click( function () {
-		var boxHTML = '<div class="lightbox">';
-		boxHTML += '<img src="' + $(this).attr("src") + '" class="lightBoxImg">';
-		boxHTML += '<p class = lightBoxText>' + $(this).attr("alt") + '</p>';
-		boxHTML += '<p id="close">X</p></div>';
+			var boxHTML = '<div class="lightbox">';
+			boxHTML += '<img src="' + $(this).attr("src") + '" class="lightBoxImg">';
+			boxHTML += '<p class = lightBoxText>' + $(this).attr("alt") + '</p>';
+			boxHTML += '<p id="close">X</p></div>';
 		
-		$('#main-gallery').append(boxHTML);
+			$('#main-gallery').append(boxHTML);
 
-		$('#close').click( function () {
-			$('.lightbox').remove();
-		});
+			$('#close').click( function () {
+				$('.lightbox').remove();
+			});
 
 		}); //end lightbox
 
 		
-	}	
+	};	
 
 	$.getJSON(spotifyApi, getAlbumInfo);
 
